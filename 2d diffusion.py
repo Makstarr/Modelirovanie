@@ -35,7 +35,7 @@ time2 = 1800#int(input("Введите время разгонки, мин: "))*
 #n = 100 int(input("Введите число точек: "))
 Csi = 6e16#float(input("Введите концентрацию в подложке: "))
 
-n = 50
+n = 30
 xmax = 0.5
 # пустые массивы
 C = np.empty(n)
@@ -61,8 +61,7 @@ for i in range(n):
         x[i] = x[i - 1] + dx
         Y[i] = Y[i - 1] + dx
 
-print (Y)
-print (x)
+
 # Массивы в матрицы
 X1, Y1 = np.meshgrid(x, Y)
 # Пустая матрица для концентраций
@@ -83,8 +82,6 @@ def ni(temperature):
     return ni
 
 
-print(Z0)
-print('\n')
 # расчет ni для загонки и разгонки
 ni2=ni(temperature2)
 ni1=ni(temperature1)
@@ -103,69 +100,74 @@ def zagonka_razgonka():
     delta = np.empty(n)
     lyamda = np.empty(n)
 
-    def c_time(C, T, ni, condition):
+    def c_time(C, C_1, C1, T, ni, condition):
         # граничные условия
-        d[0] = 0
-        a[0] = 1
-        b[0] = 0
-        if condition == 'difOX':
-            d[0] = 0
-            a[0] = 1
-            r[0] = Co
-        elif condition == 'difOY':
-            d[0] = 0
-            a[0] = 1
-            r[0] = 0
-        elif condition == 'razgonOX':
-            d[0] = 1
-            a[0] = -1
-            r[0] = 0
-        d[n - 1] = 0
-        a[n - 1] = 1
-        b[n - 1] = 0
-        r[n - 1] = 0
-        delta[0] = -d[0] / a[0]
-        lyamda[0] = r[0] / a[0]
-
-        for i in range(0, n, 1):
-            a[i] = -(2 + (dx ** 2 * 1e-8) / (Dif(C[i], T, ni) * dt))
-            r[i] = (-((dx ** 2 * 1e-8) * C[i]) / (Dif(C[i], T, ni) * dt))
-            b[i] = 1
-            d[i] = 1
-        for i in range(1, n, 1):
-            delta[i] = -d[i] / (a[i] + b[i] * delta[i - 1])
-            lyamda[i] = (r[i] - b[i] * lyamda[i - 1]) / (a[i] + b[i] * delta[i - 1])
-        C[-1] = lyamda[-1]
-        for i in range(n - 2, -1, -1):
-            C[i] = delta[i] * C[i + 1] + lyamda[i]
-        return C
+        if condition == '1' or condition == '2' or condition == '3' or condition == '4':
+            if condition == '1':
+                r[0] = Co
+                d[0] = 0
+                a[0] = 1
+            elif condition == '2':
+                r[0] = 0
+                d[0] = 0
+                a[0] = 1
+            elif condition == '3':
+                d[0] = 1
+                a[0] = -1
+                r[0] = 0
+            elif condition == '4':
+                d[0] = 1
+                a[0] = -1
+                r[0] = 0
+            b[0] = 0
+            d[n - 1] = 0
+            a[n - 1] = 1
+            b[n - 1] = 0
+            r[n - 1] = 0
+            delta[0] = 0
+            lyamda[0] = r[0] / a[0]
+            if condition == '1' or condition == '3':
+                for i in range(1, n, 1):
+                    a[i] = -(2 + (dx ** 2 * 1e-8)/(Dif(C[i], T, ni) * dt))
+                    r[i] = -(C1[i] - (2 - (dx ** 2 * 1e-8)/(Dif(C[i], T, ni)* dt))* C[i] + C_1[i])
+                    b[i] = 1
+                    d[i] = 1
+                for i in range(0, n, 1):
+                    delta[i] = -d[i] / (a[i] + b[i] * delta[i - 1])
+                    lyamda[i] = (r[i] - b[i] * lyamda[i - 1]) / (a[i] + b[i] * delta[i - 1])
+            if condition == '2'  or condition == '4':
+                for i in range(0, n, 1):
+                    a[i] = -(2 + (dx ** 2 * 1e-8)/(Dif(C[i], T, ni) * dt))
+                    r[i] = -(C1[i] - (2 - (dx ** 2 * 1e-8)/(Dif(C[i], T, ni)* dt))* C[i] + C_1[i])
+                    b[i] = 1
+                    d[i] = 1
+                for i in range(0, n, 1):
+                    delta[i] = -d[i] / (a[i] + b[i] * delta[i - 1])
+                    lyamda[i] = (r[i] - b[i] * lyamda[i - 1]) / (a[i] + b[i] * delta[i - 1])
+            C[-1] = lyamda[-1]
+            for i in range(n - 2, -1, -1):
+                C[i] = delta[i] * C[i + 1] + lyamda[i]
+            return C
 
     # Загонка
     for k in np.arange(1, time1, dt):
-        for j in range(0, n):
-            # Если координата снаружи площадки r[0] = 0
-            if x[j] <= 0.1 or x[j] >= 0.3:
-                Z0[j] = c_time(Z0[j], temperature1, ni1, 'difOY')
-            # Внутри площадки r[0] = Co
-            else:
-                Z0[j] = c_time(Z0[j], temperature1, ni1, 'difOX')
-        # Загонка по Y r[0] = 0
-        for j in range(0, n):
-            Z0[:, j] = c_time(Z0[:, j], temperature1,  ni1, 'difOY')
         print(k)
-
-    print('\n')
-    print(Z0)
+        for xx in range(1, n-1):
+            if x[xx]<=0.3 and x[xx]>=0.1:
+                Z0[xx] = c_time(Z0[xx],Z0[xx-1],Z0[xx+1], temperature1, ni1, '1')
+            if x[xx]>=0.3 or x[xx]<=0.1:
+                Z0[xx] = c_time(Z0[xx], Z0[xx - 1], Z0[xx + 1], temperature1, ni1, '2')
+        for yy in range(1, n-1):
+           Z0[:, yy] = c_time(Z0[:,yy], Z0[:,yy - 1], Z0[:,yy + 1], temperature1,  ni1, '2')
     surf = ax.plot_wireframe(Y1, X1, Z0, color="green")
-
 
     # Разгонка
     for k in np.arange(1, time2, dt):
-        for j in range(0, n):
-            Z0[j] = c_time(Z0[j], temperature2, ni2, 'razgonOX')
-        for j in range(0, n):
-            Z0[:, j] = c_time(Z0[:, j], temperature2, ni2, 'difOY')
-        print(k)
+        print (k)
+        for xx in range(1, n-1):
+            Z0[xx] = c_time(Z0[xx],Z0[xx-1],Z0[xx+1], temperature2, ni2, '3')
+        for yy in range(1, n-1):
+            Z0[:, yy] = c_time(Z0[:,yy], Z0[:,yy - 1], Z0[:,yy + 1], temperature2, ni2, '4')
 
     surf2 = ax.plot_wireframe(Y1, X1, Z0, color="red")
     print('\n')
