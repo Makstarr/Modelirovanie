@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c3d4858-9c67-43a7-8385-6778ba007e1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Diff.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/urchuk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/urchuk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1-tarasov.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1-tarasov.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Oxidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Oxidation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,53 +12,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/homework.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Oxidation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="112" selection-end-line="112" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-463">
-              <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
-              <folding>
-                <element signature="e#687#718#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Diff.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2459">
-              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.9">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/homework.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Oxidation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2">
+                  <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Diff.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2760">
+                  <caret line="187" column="31" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,7 +68,6 @@
       <find>dt</find>
       <find>ax</find>
       <find>y</find>
-      <find>lim</find>
       <find>x</find>
       <find>j</find>
       <find>lin</find>
@@ -102,6 +84,7 @@
       <find>dx</find>
       <find>PLT</find>
       <find>3</find>
+      <find>lim</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,8 +124,11 @@
         <option value="$PROJECT_DIR$/Diffusion.py" />
         <option value="$PROJECT_DIR$/111.py" />
         <option value="$PROJECT_DIR$/Oxidation.py" />
+        <option value="$PROJECT_DIR$/Ion implantation.py" />
+        <option value="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Oxidation.py" />
         <option value="$PROJECT_DIR$/Diff.py" />
         <option value="$PROJECT_DIR$/homework.py" />
+        <option value="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/homework.py" />
       </list>
     </option>
   </component>
@@ -163,6 +149,11 @@
             <path>
               <item name="Modelirovanie" type="b2602c69:ProjectViewProjectNode" />
               <item name="Modelirovanie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Modelirovanie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Modelirovanie" type="462c0819:PsiDirectoryNode" />
+              <item name="Thermal oxidation + 2d diffusion" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,7 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lab3">
+  <component name="RunManager" selected="Python.homework">
     <configuration name="Diff" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="urchuk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,7 +198,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Diff.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Diff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,7 +240,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Oxidation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Oxidation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,19 +270,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lab3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="homework" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="urchuk" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../lasers/venv/bin/python" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/homework.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="homework.py" type="PythonConfigurationType" factoryName="Python">
+      <module name="urchuk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../FPP/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thermal oxidation + 2d diffusion/homework.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,18 +313,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.homework.py" />
       <item itemvalue="Python.С_учетом_y-3" />
-      <item itemvalue="Python.lab3" />
       <item itemvalue="Python.Oxidation" />
       <item itemvalue="Python.Diff" />
       <item itemvalue="Python.Lab4" />
+      <item itemvalue="Python.homework" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lab3" />
+        <item itemvalue="Python.homework" />
+        <item itemvalue="Python.Diff" />
         <item itemvalue="Python.Lab4" />
         <item itemvalue="Python.Oxidation" />
-        <item itemvalue="Python.Diff" />
         <item itemvalue="Python.С_учетом_y-3" />
       </list>
     </recent_temporary>
@@ -341,15 +354,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.15250199" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.34789515" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.15250199" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988086" visible="true" weight="0.35753426" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960285" weight="0.39937598" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988086" visible="true" weight="0.0890411" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960285" weight="0.39863014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
@@ -381,44 +393,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Diff.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Oxidation.py</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Files/Study/Urchuk/heat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1097">
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Files/Study/Urchuk/heat.py" />
     <entry file="file://$PROJECT_DIR$/../Files/Study/МИСиС/NIR/Нир1/Heat_deffusion.py" />
     <entry file="file://$PROJECT_DIR$/../Downloads/mtpn1.py" />
     <entry file="file://$PROJECT_DIR$/../1/venv/lib/python3.7/site-packages/matplotlib/animation.py" />
-    <entry file="file://$PROJECT_DIR$/../Files/Study/Urchuk/mtpn1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="207" column="10" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Files/Study/Urchuk/mtpn1.py" />
     <entry file="file://$PROJECT_DIR$/Lab1.py" />
     <entry file="file://$PROJECT_DIR$/../1/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/axes3d.py" />
     <entry file="file://$PROJECT_DIR$/3d.py" />
@@ -456,16 +436,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab1-tarasov.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="195" column="27" selection-end-line="195" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab1-tarasov.py" />
     <entry file="file://$PROJECT_DIR$/../Downloads/implantaciya.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="564">
@@ -476,87 +447,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="96" column="19" lean-forward="true" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Лаб3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2.py" />
+    <entry file="file://$PROJECT_DIR$/Лаб3.png" />
     <entry file="file://$PROJECT_DIR$/lab3_новая.py" />
-    <entry file="file://$PROJECT_DIR$/dz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4290">
-          <caret line="286" column="16" selection-start-line="286" selection-start-column="16" selection-end-line="301" selection-end-column="95" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab3 copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="1" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dz.py" />
+    <entry file="file://$PROJECT_DIR$/lab3 copy.py" />
     <entry file="file://$PROJECT_DIR$/Diffusion1.py" />
-    <entry file="file://$PROJECT_DIR$/С_учетом_y-3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="12" selection-start-line="12" selection-end-line="142" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/С_учетом_y-3.py" />
     <entry file="file://$PROJECT_DIR$/Diffusion.py" />
     <entry file="file://$PROJECT_DIR$/111.py" />
-    <entry file="file://$PROJECT_DIR$/Lab4.py">
+    <entry file="file://$PROJECT_DIR$/Lab4.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tokenize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-463">
-          <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
-          <folding>
-            <element signature="e#687#718#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="6373">
+          <caret line="446" selection-start-line="446" selection-end-line="446" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Oxidation.py">
+    <entry file="file://$PROJECT_DIR$/Ion implantation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="112" selection-end-line="112" />
+        <state relative-caret-position="128">
+          <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/homework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-line="3" selection-start-column="31" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Oxidation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Diff.py">
+    <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Oxidation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2459">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="2">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework.py">
+    <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/Diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2760">
+          <caret line="187" column="31" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermal oxidation + 2d diffusion/homework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>

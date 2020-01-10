@@ -5,7 +5,6 @@ from mpl_toolkits.mplot3d import Axes3D
 
 fig = plt.figure()
 Axes3D(fig)
-surf, ax = plt.subplots()
 
 ax = fig.gca(projection='3d')
 Diff.zagonka()
@@ -34,22 +33,21 @@ for t in range(1, timeOxidation):
         borderElement += dx  # Граничный элемент следующий
         time -= time  # Время окисления обнуляется
         ax.plot(y, howMuchOxid, c="#e5d8c0")  # один из цветных графиков оксида (положительная часть)
-        ax.plot(y, [-howMuchOxid[i] for i in range (0,n)], c="#e5d8c0")  # один из цветных графиков оксида (отрицательная часть)
+        ax.plot(y, [-0.81*howMuchOxid[i] for i in range (0,n)], c="#e5d8c0")  # один из цветных графиков оксида (отрицательная часть)
         xi = copy.deepcopy(howMuchOxid)  # Копирует массив толщины для нового процесса
         temperature, orientation, p, xmax, B, A, ni = vvodDannih(Diff.Z0[:, j])
 
 Diff.razgonka(time, max(howMuchOxid))  # Запускается разгонка от 0 до time (время окисления последнего кусочка)
 
 
-
 surf = ax.plot_wireframe(Diff.Y1, Diff.X1, Diff.Z0, color="#141918")
 oxid = ax.plot(y, howMuchOxid, c='black')
-oxid2 = ax.plot(y, [-howMuchOxid[i] for i in range (0,n)], c='#5f4d3d')
+oxid2 = ax.plot(y, [-0.81*howMuchOxid[i] for i in range (0,n)], c='#5f4d3d')
 ax.set_xlabel('Y' )
 ax.set_ylabel('X')
 ax.set_zlabel('Концентрация')
 ax.set_ylim3d(-max(howMuchOxid)*1.2, 2)
 Diff.pnFind(Diff.Z0)
-ax.plot(Diff.x_pn,Diff.y_pn, c='red', label="pn-переход", linewidth=3)
+ax.plot(Diff.x_pn, Diff.y_pn, c='red', label="pn-переход", linewidth=3)
 plt.show()
 

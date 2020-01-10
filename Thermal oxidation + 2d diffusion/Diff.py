@@ -136,9 +136,9 @@ def zagonka():
     for k in np.arange(1, time1, dt):
         print(k)
         for xx in range(1, n-1):
-            if x[xx]<=5 and x[xx]>=1:
+            if x[xx]<=4 and x[xx]>=2:
                 Z0[xx] = c_time(Z0[xx],Z0[xx-1],Z0[xx+1], temperature1, ni1, '1')
-            if x[xx]>=5 or x[xx]<=1:
+            if x[xx]>=4 or x[xx]<=2:
                 Z0[xx] = c_time(Z0[xx], Z0[xx - 1], Z0[xx + 1], temperature1, ni1, '2')
         for yy in range(1, n-1):
            Z0[:, yy] = c_time(Z0[:,yy], Z0[:,yy - 1], Z0[:,yy + 1], temperature1,  ni1, '2')

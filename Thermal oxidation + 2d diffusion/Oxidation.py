@@ -4,7 +4,7 @@ from numpy import sqrt, arctan, inf, real, log
 from math import exp, pi
 from scipy.special import erf
 import copy
-import Diff
+
 # шаг по времени
 dt = 1
 # константы
